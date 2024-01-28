@@ -271,21 +271,17 @@ body{
 .contentBarNav{
     width: 100%;
     height: 12%;
-    background-color: rgba(0, 0, 0, 0.452);
+    background-color: rgba(14, 13, 13, 0.863);
     position: relative;
     z-index: 600;
     margin-top: -2px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 }
 .contentBarContents{
     width: 100%;
     height: 100%;
     /* background-color: blue; */
     margin-top: -7.4%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("https://pixelbox.ru/wp-content/uploads/2023/10/anime-banner-discord-pixelbox.ru-16.jpg");
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
@@ -319,17 +315,43 @@ body{
     /* background-color: rgba(0, 0, 0, 0.301); */
 }
 .contentBarContentsBannerTitleText{
+    cursor: default;
     width: 100%;
-    height: 65%;
+    height: 75%;
     display: inline-flex;
     justify-content: start;
     align-items: center;
-    font-size: 60px;
+    font-size: 100px;
+    text-shadow:0px 0px 10px white;
     font-family: monospace;
+    position: relative;
+    z-index: 8;
     font-weight: 1000;
-    padding: 0 0 0 50px;
-    background-color: rgba(29, 29, 29, 0.733);
+    padding: 40px 0 0 70px;
+    box-sizing: border-box;
+    /* background-color: rgba(29, 29, 29, 0.733); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
+.contentBarContentsBannerSheder_Phonk{
+    background-position-y: -140px;
+    box-shadow:0px 0px 300px 200px rgb(32, 3, 43);
+    background-image: url("https://pixelbox.ru/wp-content/uploads/2023/10/anime-banner-discord-pixelbox.ru-16.jpg");
+}
+
+
+
+.contentBarContentCard{
+    width: 100%;
+    height: 10%;
+    border: 1px solid white;
+}
+
+
+
+
 .contentBarContentsBannerTitleMenu{
     width: 100%;
     height: 15%;
@@ -340,16 +362,21 @@ body{
     font-family: monospace;
     font-weight: 1000;
     padding: 0 0 0 50px;
-    background-color: green;
+    background-color: rgba(29, 29, 29, 0.733);
 }
 
 
 .contentBarContentsCards{
-    margin-top: 10%;
-    width: 100%;
-    min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.925);
-    backdrop-filter: blur(6px);
+    /* margin-top: 10%; */
+    border-top: 1px solid gray;
+    width: 97%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    /* background-color: rgba(0, 0, 0, 0.925);
+    backdrop-filter: blur(6px); */
+    padding: 30px 20px 40px 20px;
+    box-sizing: border-box
 }
 
 
