@@ -145,7 +145,7 @@ $(document).ready(function(){
             <div class="SaundGetListUpHideBtn SaundGetListUp"><i class="fa-solid fa-angle-down SaundGetListUpHideBtnIcon"></i></div>
             <div class="SaundGetListUpShowBtn SaundGetListUp"><i class="fa-solid fa-angle-up SaundGetListUpShowBtnIcon"></i></div>
         </div>
-        <audio src="music/Phonk_Sleepwalker.m4a" class="SaundGetListSaund" controls></audio>
+        <audio src="" class="SaundGetListSaund" controls></audio>
             
             `)
 
@@ -248,7 +248,7 @@ $(document).ready(function(){
             <div class="SaundGetListUpHideBtn SaundGetListUp"><i class="fa-solid fa-angle-down SaundGetListUpHideBtnIcon"></i></div>
             <div class="SaundGetListUpShowBtn SaundGetListUp"><i class="fa-solid fa-angle-up SaundGetListUpShowBtnIcon"></i></div>
         </div>
-        <audio src="music/xxxTentacion_Sad.m4a" class="SaundGetListSaund" controls></audio>
+        <audio src="" class="SaundGetListSaund" controls></audio>
             
             `)
 
@@ -321,4 +321,31 @@ $(document).ready(function(){
 
 
 
+});
+
+
+
+
+
+
+
+$(".SearchTagBy").click(function(){
+    // $(".contentBarNavSearch").css("display", "flex")
+    $(".contentBarNavHomeTxt").css("opacity", "0")
+    $(".contentBarNavSearch").css("height", "70%")
+    $(".contentBarNavSearch").css("margin-top", "10px")
+    $(".contentBarNavSearch").css("font-size", "25px")
+    $(".contentBarNavSearchInp").val("No tags")
+    document.querySelector(".leftNavBarMenuSearch").classList.add("leftNavBarMenu_itemOwn")
+    document.querySelector(".leftNavBarMenuSearch").classList.remove("leftNavBarMenu_item")
+    document.querySelector(".leftNavBarMenuHomeBg").classList.remove("leftNavBarMenu_itemOwn")
+    document.querySelector(".leftNavBarMenuHomeBg").classList.add("leftNavBarMenu_item")
+    setTimeout(() => {
+        $(".contentBarNavSearch").css("width", "50%")
+        $(".contentBarNavSearch").css("opacity", "1")
+        $(".contentBarNavHomeTxt").css("width", "0%")
+        $(".contentBarNavHomeTxt").css("height", "0%")
+        $(".contentBarNavHomeTxt").css("margin-top", "30px")
+        $(".contentBarNavHomeTxt").css("font-size", "0px")
+    }, 100);
 });
